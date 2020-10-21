@@ -8,7 +8,7 @@ let nDinoRunFrame;
 
 const loadImage = (nAngle) => {
     let oImage = document.querySelector('#idCircleImage');
-    oImage.setAttribute('src', `/images/circles/circle_${nAngle ? nAngle : nImageAngle}.svg`);
+    oImage.setAttribute('src', `./images/circles/circle_${nAngle ? nAngle : nImageAngle}.svg`);
 }
 
 let rotateImage = _ => {
@@ -50,7 +50,7 @@ let dinoJump = _ => {
         nDinoRunFrame < 8 ? nDinoRunFrame += 1 : nDinoRunFrame = 1;
     }
 
-    oDinoImage.setAttribute('src', `/images/dino/Run (${nDinoRunFrame}).png`);
+    oDinoImage.setAttribute('src', `./images/dino/Run (${nDinoRunFrame}).png`);
 };
 
 document.body.onload = _ => {
